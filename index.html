@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>简版vue2.0</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+</head>
+<body>
+<div id="app">
+  <div>
+    hah
+  </div>
+</div>
+<script type="java">
+  console.log(123)
+</script>
+
+<script>
+  const script = document.getElementsByTagName('script')[0]
+  var newNodeBottom = document.createElement("script");
+  newNodeBottom.text = script.text
+  const body = document.getElementsByTagName('body')[0]
+  body.appendChild(newNodeBottom)
+</script>
+
+</body>
+</html>
